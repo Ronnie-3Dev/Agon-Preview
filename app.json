@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Agon Preview",
+    "slug": "agon-preview",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#070D1A",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "MeasureMate uses the camera to aim at people and objects for height measurement, and to read your pulse from your fingertip.",
+        "NSMotionUsageDescription": "MeasureMate uses motion sensors to measure the tilt angle of your phone for height calculations."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "FLASHLIGHT"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#070D1A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "MeasureMate uses the camera to aim at people and objects for height measurement, and to read your pulse from your fingertip."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "MeasureMate uses motion sensors to measure the tilt angle of your phone for height calculations."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "552f0665-e30d-4f11-9ea9-97bc22a22809"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/552f0665-e30d-4f11-9ea9-97bc22a22809"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "owner": "arcadalabs",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}
